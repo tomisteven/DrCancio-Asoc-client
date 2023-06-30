@@ -1,0 +1,37 @@
+@import './variables';
+
+html{
+    box-sizing: border-box;
+    *,
+    *::after,
+    *::before{
+        box-sizing: inherit;
+    }
+
+}
+
+body{
+    background-color: black;
+    font-family: 'Muli', sans-serif;
+
+
+}
+
+.site-container{
+    max-width: 1440px;
+
+    margin: 0 auto;
+    background-color: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 50px;
+    position: relative;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.main-container{
+    max-width: 1136px;
+    margin: 0 auto;
+}
